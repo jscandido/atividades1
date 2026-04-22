@@ -1,0 +1,25 @@
+name: Continuous delivery
+on:
+  push:
+    branches:
+      - main
+
+
+
+#copiei isso do use latest version
+#copiei isso do the simplest use, mudei o linter de flake8 pra pylint
+jobs:
+  deliver:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out repository code
+        uses: actions/checkout@v5
+
+
+      - name: cd simulation
+        uses: actions/upload-artifact@v7
+        with:
+          name: projetozipado
+          path: |
+            main.py
+            README.md
