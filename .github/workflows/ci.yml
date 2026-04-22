@@ -9,7 +9,7 @@ on:
 
 
 #copiei isso do use latest version
-#copiei isso do the simplest use, mudei o linter de flake8 pra pylint
+
 jobs:
   build:
     runs-on: ubuntu-latest
