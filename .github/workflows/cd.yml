@@ -7,7 +7,7 @@ on:
 
 
 #copiei isso do use latest version
-#copiei isso do the simplest use, mudei o linter de flake8 pra pylint
+
 jobs:
   deliver:
     runs-on: ubuntu-latest
