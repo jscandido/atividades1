@@ -22,7 +22,7 @@ jobs:
           linter: pylint
 
 
-  buildx:
+  docker:
     runs-on: ubuntu-latest
     steps:
       -
