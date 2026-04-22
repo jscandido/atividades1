@@ -22,17 +22,6 @@ jobs:
           linter: pylint
 
 
-
-
-
-
-
-
-
-
-
-
-
   buildx:
     runs-on: ubuntu-latest
     steps:
