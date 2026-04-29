@@ -3,9 +3,13 @@ import random
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
 def home():
-    return "deu certo                                                                                                         "
+    return 'deu certo'
+
+@app.route('/numero')
+def numero():
+    return str(random.randint(1, 10))
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host='0.0.0.0', port=5000)
